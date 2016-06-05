@@ -1,0 +1,63 @@
+{
+  "name": "premodules-loader",
+  "version": "0.0.1",
+  "description": "Share css-modules compiled class names over pre-processers",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prebuild": "npm run lint",
+    "build": "NODE_ENV=DEBUG webpack --config ./webpack.config.js --display-error-details --color",
+    "pretest": "npm run build",
+    "test": "mocha build/spec.js"
+  },
+  "author": "Dolphin Wood <dolphin.w.e@gmail.com>",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.1",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-friendly-formatter": "^2.0.5",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-promise": "^1.3.2",
+    "eslint-plugin-standard": "^1.3.2",
+    "loader-utils": "^0.2.15",
+    "mocha": "^2.5.3",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "wrench": "^1.5.9"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idiotWu/premodules-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "css",
+    "css-modules",
+    "pre-processors"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idiotWu/premodules-loader/issues"
+  },
+  "homepage": "https://github.com/idiotWu/premodules-loader",
+  "files": [
+    "lib/",
+    "index.js"
+  ]
+}

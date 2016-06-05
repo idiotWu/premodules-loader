@@ -1,0 +1,13 @@
+@module './comp.scss' => $comp;
+
+#{map-get($comp, 'main')} {
+  background: #123;
+}
+
+#{map-get($comp, 'btn')} {
+  border-radius: 3px;
+}
+
+#{map-get($comp, 'list')} {
+  list-style: none;
+}

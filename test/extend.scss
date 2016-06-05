@@ -1,0 +1,17 @@
+@module './comp.scss' => $comp;
+
+#{map-get($comp, 'main')} {
+  position: relative;
+}
+
+#{map-get($comp, 'btn')} {
+  display: inline-block;
+}
+
+#{map-get($comp, 'list')} {
+  float: left;
+}
+
+.special {
+  font-size: 5em;
+}
