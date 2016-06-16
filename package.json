@@ -1,6 +1,6 @@
 {
   "name": "premodules-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Share css-modules compiled class names over pre-processers",
   "main": "index.js",
   "scripts": {
